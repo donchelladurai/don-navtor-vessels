@@ -14,7 +14,23 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@don-navtor-vessels/shared-models": ["libs/shared/models/src/index.ts"],
+      "@don-navtor-vessels/shared-services": [
+        "libs/shared/services/src/index.ts"
+      ],
+      "@don-navtor-vessels/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "@don-navtor-vessels/feature-vessels": [
+        "libs/vessels/feature/src/index.ts"
+      ],
+      "@don-navtor-vessels/vessels-state": ["libs/vessels/state/src/index.ts"],
+      "@don-navtor-vessels/feature-emissions": [
+        "libs/emissions/feature/src/index.ts"
+      ],
+      "@don-navtor-vessels/emissions-state": [
+        "libs/emissions/state/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
