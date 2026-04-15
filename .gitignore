@@ -18,6 +18,8 @@ node_modules
 *.sublime-workspace
 
 # IDE - VSCode
+.vs/*
+vessel-app/.vs/*
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -42,3 +44,7 @@ Thumbs.db
 .nx/workspace-data
 .claude/worktrees
 .claude/settings.local.json
+
+.angular
+
+__screenshots__/
