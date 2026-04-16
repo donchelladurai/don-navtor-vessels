@@ -1,1 +1,2 @@
-export * from './lib/vessels-state/vessels-state';
+export { VesselsStore } from './lib/vessels.store';
+export { VesselsFacade } from './lib/vessels.facade';
