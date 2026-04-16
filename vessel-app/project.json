@@ -8,7 +8,7 @@
   "targets": {
     "build": {
       "executor": "@angular/build:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [ "{options.outputPath}" ],
       "options": {
         "outputPath": "dist/vessel-app",
         "browser": "vessel-app/src/main.ts",
@@ -18,9 +18,14 @@
           {
             "glob": "**/*",
             "input": "vessel-app/public"
+          },
+          {
+            "glob": "staticwebapp.config.json",
+            "input": "vessel-app/src",
+            "output": "/"
           }
         ],
-        "styles": ["vessel-app/src/styles.scss"]
+        "styles": [ "vessel-app/src/styles.scss" ]
       },
       "configurations": {
         "production": {
