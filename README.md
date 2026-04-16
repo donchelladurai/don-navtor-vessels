@@ -2,7 +2,7 @@
 
 This is my submission for the NAVTOR interview exercise. It's an Angular 21 app that displays vessel fleet data and emission charts, built using an Nx monorepo.
 
-**Live demo:** [https://proud-sea-019e0c103.2.azurestaticapps.net](https://proud-sea-019e0c103.2.azurestaticapps.net)
+**Live demo (I've hosted it on Azure as a static web app):** [https://proud-sea-019e0c103.2.azurestaticapps.net](https://proud-sea-019e0c103.2.azurestaticapps.net)
 
 ---
 
