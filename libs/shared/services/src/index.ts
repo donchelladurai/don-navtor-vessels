@@ -1,1 +1,2 @@
-export * from './lib/shared-services/shared-services';
+export * from './lib/vessel.service';
+export * from './lib/emission.service';
