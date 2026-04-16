@@ -1,0 +1,21 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <i class="pi pi-compass"></i>
+      <span>NAVTOR</span>
+    </div>
+    <nav>
+      <a routerLink="/vessels" routerLinkActive="active">
+        <i class="pi pi-list"></i>
+        <span>Vessels</span>
+      </a>
+      <a routerLink="/emissions" routerLinkActive="active">
+        <i class="pi pi-chart-line"></i>
+        <span>Emissions</span>
+      </a>
+    </nav>
+  </aside>
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>

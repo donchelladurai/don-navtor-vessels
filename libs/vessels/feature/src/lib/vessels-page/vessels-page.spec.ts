@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FeatureVessels } from './feature-vessels';
+import { VesselsPage } from './vessels-page';
 
-describe('FeatureVessels', () => {
-  let component: FeatureVessels;
-  let fixture: ComponentFixture<FeatureVessels>;
+describe('VesselsPage', () => {
+  let component: VesselsPage;
+  let fixture: ComponentFixture<VesselsPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeatureVessels],
+      imports: [VesselsPage],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FeatureVessels);
+    fixture = TestBed.createComponent(VesselsPage);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,1 +1,1 @@
-export * from './lib/feature-vessels/feature-vessels';
+export * from './lib/vessels-page/vessels-page';
