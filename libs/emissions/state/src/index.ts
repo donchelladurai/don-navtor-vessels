@@ -1,1 +1,2 @@
-export * from './lib/emissions-state/emissions-state';
+export { EmissionsStore } from './lib/emissions.store';
+export { EmissionsFacade } from './lib/emissions.facade';

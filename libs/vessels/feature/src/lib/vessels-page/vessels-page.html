@@ -1,1 +1,28 @@
-<p>vessels-page works!</p>
+<div class="page-header">
+  <h2>Vessels</h2>
+  @if (!facade.loading() && !facade.error()) {
+  <span class="count">{{ facade.vesselCount() }} vessels</span>
+  }
+</div>
+
+@if (facade.loading()) {
+<div class="center">
+  <p-progressSpinner strokeWidth="4" animationDuration="0.8s" />
+</div>
+} @else if (facade.error()) {
+<div class="error">
+  <i class="pi pi-exclamation-triangle"></i>
+  {{ facade.error() }}
+</div>
+} @else {
+<ag-grid-angular  class="vessels-grid"
+                  [theme]="gridTheme"
+                  [rowData]="facade.vessels()"
+                  [columnDefs]="columnDefs"
+                  [defaultColDef]="defaultColDef"
+                  [pagination]="true"
+                  [paginationPageSize]="15"
+                  [paginationPageSizeSelector]="[10, 15, 25, 50]"
+                  [animateRows]="true"
+                  (gridReady)="onGridReady($event)" />
+}

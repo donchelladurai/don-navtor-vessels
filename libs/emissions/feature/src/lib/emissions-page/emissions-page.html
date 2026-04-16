@@ -1,0 +1,30 @@
+<h2 class="title">Vessel Emissions</h2>
+
+@if (facade.loading()) {
+<div class="center">
+  <p-progressSpinner strokeWidth="4" animationDuration="0.8s" />
+</div>
+} @else if (facade.error()) {
+<div class="error">
+  <i class="pi pi-exclamation-triangle"></i>
+  {{ facade.error() }}
+</div>
+} @else {
+<div class="controls">
+  <label for="vessel-select">Vessel:</label>
+  <p-select id="vessel-select"
+            [options]="facade.vesselOptions()"
+            optionLabel="name"
+            optionValue="id"
+            [ngModel]="facade.selectedVesselId()"
+            (ngModelChange)="facade.selectVessel($event)"
+            placeholder="Select a vessel"
+            [style]="{ minWidth: '280px' }" />
+</div>
+
+@if (facade.selectedTimeSeries().length > 0) {
+<highcharts-chart [constructorType]="'chart'"
+                  [options]="chartOptions()"
+                  class="chart" />
+}
+}

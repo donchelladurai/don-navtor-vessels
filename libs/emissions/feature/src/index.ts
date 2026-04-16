@@ -1,1 +1,1 @@
-export * from './lib/feature-emissions/feature-emissions';
+export * from './lib/emissions-page/emissions-page';

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EmissionsState } from './emissions-state';
+import { EmissionsPage } from './emissions-page';
 
-describe('EmissionsState', () => {
-  let component: EmissionsState;
-  let fixture: ComponentFixture<EmissionsState>;
+describe('EmissionsPage', () => {
+  let component: EmissionsPage;
+  let fixture: ComponentFixture<EmissionsPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EmissionsState],
+      imports: [EmissionsPage],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EmissionsState);
+    fixture = TestBed.createComponent(EmissionsPage);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
