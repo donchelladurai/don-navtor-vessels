@@ -1,0 +1,16 @@
+export enum VesselType {
+  BulkCarrier = 'Bulk Carrier',
+  ChemicalCarrier = 'Chemical Carrier',
+  Container = 'Container',
+  Crude = 'Crude',
+  Dredge = 'Dredge',
+  DryCargo = 'Dry Cargo',
+  GeneralCargo = 'General Cargo',
+  LiquidCargo = 'Liquid Cargo',
+  Livestock = 'Livestock',
+  Passenger = 'Passenger',
+  ProductCarrier = 'Product Carrier',
+  Reefer = 'Reefer',
+  Tanker = 'Tanker',
+  Tug = 'Tug',
+}
