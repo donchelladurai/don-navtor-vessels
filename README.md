@@ -15,7 +15,7 @@ This is my submission for the NAVTOR interview exercise. It's an Angular 21 app 
 
 ### Architecture
 
-I've tried to make this modular and I've used a Feature Sliced Design. It's structured as an **Nx monorepo** with 7 libraries organised by domain and responsibility:
+I've tried to make this modular and used a Domain Driven Vertical Slices. It's structured as an **Nx monorepo** with 7 libraries organised by domain and responsibility:
 
 | Library | What it does |
 |---------|-------------|
